@@ -1,2 +1,2 @@
 # teste-tecnico-HUB-API
-Este repositório armazena o teste técnico pertinente ao processo seletivo - Inmetrics/HUB
+This repository stores the technical test related to the selection process - Inmetrics/HUB

@@ -1,0 +1,413 @@
+[
+  {
+    "uri": "features/specs/Consult books/consult_books.feature",
+    "id": "consult-books",
+    "keyword": "Feature",
+    "name": "Consult Books",
+    "description": "    As a user, \n    would like to consult the books available in the library",
+    "line": 5,
+    "tags": [
+      {
+        "name": "@consult_a_book",
+        "line": 3
+      },
+      {
+        "name": "@complete_flow",
+        "line": 4
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Library API Access",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "That I have access to the library API",
+            "line": 10,
+            "output": [
+              "200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2519153900
+            }
+          }
+        ]
+      },
+      {
+        "id": "consult-books;finding-all-books-in-the-library",
+        "keyword": "Scenario",
+        "name": "Finding all books in the library",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consult_a_book",
+            "line": 3
+          },
+          {
+            "name": "@complete_flow",
+            "line": 4
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I consult the number of books",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 882188000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I get the total number of books",
+            "line": 14,
+            "output": [
+              "200 books"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Library API Access",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "That I have access to the library API",
+            "line": 10,
+            "output": [
+              "200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2157905500
+            }
+          }
+        ]
+      },
+      {
+        "id": "consult-books;finding-a-newly-created-book-in-the-library;;2",
+        "keyword": "Scenario Outline",
+        "name": "Finding a newly created book in the library",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consult_a_book",
+            "line": 3
+          },
+          {
+            "name": "@complete_flow",
+            "line": 4
+          },
+          {
+            "name": "@consult_book_specific",
+            "line": 15
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "search the book 200",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 874394700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will have all the information from the book",
+            "line": 18,
+            "output": [
+              "Title: Book 200",
+              "ID Book: 200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Library API Access",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "That I have access to the library API",
+            "line": 10,
+            "output": [
+              "200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2106032800
+            }
+          }
+        ]
+      },
+      {
+        "id": "consult-books;finding-a-newly-created-book-in-the-library;;3",
+        "keyword": "Scenario Outline",
+        "name": "Finding a newly created book in the library",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consult_a_book",
+            "line": 3
+          },
+          {
+            "name": "@complete_flow",
+            "line": 4
+          },
+          {
+            "name": "@consult_book_specific",
+            "line": 15
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "search the book 150",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 888309000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will have all the information from the book",
+            "line": 18,
+            "output": [
+              "Title: Book 150",
+              "ID Book: 150"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35700
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Library API Access",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "That I have access to the library API",
+            "line": 10,
+            "output": [
+              "200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2148740400
+            }
+          }
+        ]
+      },
+      {
+        "id": "consult-books;finding-a-newly-created-book-in-the-library;;4",
+        "keyword": "Scenario Outline",
+        "name": "Finding a newly created book in the library",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consult_a_book",
+            "line": 3
+          },
+          {
+            "name": "@complete_flow",
+            "line": 4
+          },
+          {
+            "name": "@consult_book_specific",
+            "line": 15
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "search the book 80",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1278667200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will have all the information from the book",
+            "line": 18,
+            "output": [
+              "Title: Book 80",
+              "ID Book: 80"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34400
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/specs/Create one Book/create_one_book.feature",
+    "id": "consult-books",
+    "keyword": "Feature",
+    "name": "Consult Books",
+    "description": "    As a user, \n    would like to consult the books available in the library",
+    "line": 5,
+    "tags": [
+      {
+        "name": "@create_book",
+        "line": 3
+      },
+      {
+        "name": "@complete_flow",
+        "line": 4
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Library API Access",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "That I have access to the library API",
+            "line": 10,
+            "output": [
+              "200"
+            ],
+            "match": {
+              "location": "features/step_definitions/Consult books/consult_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2118810300
+            }
+          }
+        ]
+      },
+      {
+        "id": "consult-books;create-a-new-book",
+        "keyword": "Scenario",
+        "name": "Create a new book",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@create_book",
+            "line": 3
+          },
+          {
+            "name": "@complete_flow",
+            "line": 4
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I enter the new book information",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/create_book/create_book_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929606100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the book will be created successfully",
+            "line": 14,
+            "output": [
+              "Success 200",
+              "Body {\"id\":201,\"title\":\"Book New\",\"description\":\"Book Test\",\"pageCount\":50,\"excerpt\":\"book written for tests\",\"publishDate\":\"2021-08-27T03:18:22.128Z\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/create_book/create_book_step.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45400
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+# by default calls the defined settings of environment and report format
+default: -p html_report -p json_report
+
+# Reports
+html_report: --format pretty --format html --out=reports/features_report.html
+json_report: --format pretty --format json --out=reports/features_report.json
